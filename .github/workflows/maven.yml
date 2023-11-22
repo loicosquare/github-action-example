@@ -7,20 +7,20 @@
 # documentation.
 
 name: Java CI with Maven
-
+#Ici nous disons que le workflow sera déclenché à chaque push sur la branche master
 on:
   push:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-
+#Voici le job qui sera exécuté lorsqu'on fera le push sur la branche master
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest #On spécifie que le job sera exécuté sur une machine ubuntu
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v3 #https://github.com/actions/checkout pour plus de détails.
     - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
