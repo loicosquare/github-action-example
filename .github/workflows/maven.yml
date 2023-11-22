@@ -34,7 +34,7 @@ jobs:
       name: Build & push Docker image
       with:
         image: loicsanou/springboot-ci-cd
-        tags: v1
+        tags: latest
         registry: docker.io
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
