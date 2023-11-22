@@ -41,6 +41,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>springboot-ci-cd</finalName> <!-- Name of the final jar file took on github-->
     </build>
 
 </project>
